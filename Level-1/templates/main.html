@@ -1,0 +1,87 @@
+<html>
+<head>
+<title> Plotting Graphs </title>
+</head>
+<style type="text/css">
+	body
+{
+	background-color=white;
+}
+h1, h2
+{
+	font-family: verdana;
+	text-align: center;
+	font-size: 40px;
+	color: blue;
+	background-color:yellow;
+	border-style: solid;
+	border-color: blue;
+	border-width: 2px;
+	border-radius: 10px;
+	padding: 6px;
+}
+fieldset
+{
+	border-color: black;
+	border-width: 5px;
+	font-family: monospace;
+	font-size: 25px;
+	text-transform: capitalize;
+}
+#legend
+{
+	color:maroon;
+	padding: 10px;
+	font-size:30px;
+	font-family: monospace;
+}
+input
+{
+	border-width: 4px;
+	width: 400px;
+	height: 30px;
+	font-size: 20px;
+	font-family: serif;
+	border-color: black;
+	color:black;
+
+}
+img
+{
+	margin-right: auto;
+	margin-left: auto;
+}
+#a
+{
+	font-family: sans-serif;size: 25px;
+	width:300px;
+	margin: 0 auto;	
+}
+#rad
+{
+	width: 50px;
+	height: 20px;
+}
+</style>
+<body>
+<h1> Welcome To Plotting Graphs Web Application </h1>
+<h2> Plotting A New Graph</h2>
+<form method='post' action='/level1graph'>
+	<fieldset>
+	<legend id='legend'> Table Information : </legend>
+	&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Plot Title : 
+		<input type='text' name='titl'><br><br>
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X-Axis Label :      
+		<input type='text' name='xlabel'><br><br>
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Y-Axis Label :
+		<input type='text' name='ylabel'><br><br>
+	Enter the Points on x-axis separated by commas : 
+	<input type='text' name='xaxis'><br><br>
+	Enter the Points on y-axis separated by commas :
+	<input type='text' name='yaxis'><br><br>
+	<input type='submit' value='Submit' id='a'>
+	<input type='reset' value='Reset' id='a'>
+</fieldset>
+</form>
+</body>
+</html>
